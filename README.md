@@ -1,21 +1,9 @@
 # dove-client
 
-## Project setup
-```
-npm install
-```
+dove授权系统前端
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+框架：`Vue`
 
-### Lints and fixes files
-```
-npm run lint
-```
+UI框架：`Element-ui`

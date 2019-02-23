@@ -2,26 +2,30 @@
   <div id="app">
     <el-container>
       <el-header>
-        <el-menu mode="horizontal" text-color="#FFFFFF" active-text-color="#283C46">
-          <el-menu-item index="1">登录</el-menu-item>
-          <el-menu-item index="2">注册</el-menu-item>
+        <el-menu mode="horizontal" text-color="#ffffff" active-text-color="#409EFF" background-color="#0D1F38" default-active="1" :router="true">
+          <el-menu-item index="/login">登录</el-menu-item>
+          <el-menu-item index="/signup">注册</el-menu-item>
         </el-menu>
       </el-header>
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view/>
+      </el-main>
       <el-footer>Footer</el-footer>
     </el-container>
   </div>
 </template>
 
 <script>
-import LogIn from './components/LogIn.vue'
 
 export default {
   name: 'app',
-  components: {
-    LogIn
+  data(){
+    return {
+      activeIndex: 1,
+    }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -32,14 +36,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  
+
   .el-header{
     padding: 0%;
 
     .el-menu{
-      background-color: #0D1F38;
 
     }
+  }
+
+  .el-main{
+  }
+
+  .el-footer{
+    height: 20%;
   }
 }
 </style>
