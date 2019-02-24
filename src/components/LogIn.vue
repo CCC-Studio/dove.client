@@ -27,9 +27,7 @@ export default {
     },
     methods: {
         // 登录按钮事件
-        logIn: function(event){
-            var username = this.username;
-            var password = this.password;
+        logIn: function(){
         }
     }
 }
@@ -38,7 +36,8 @@ export default {
 <style lang="scss" scoped>
 
 #login{
-    margin-top: 10%;
+    height: 100%;
+    width: 100%;
 
     .el-card{
         width: 300px;

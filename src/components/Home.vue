@@ -21,7 +21,6 @@ export default {
 <style lang="scss" scoped>
 
 #Index{
-    margin-top: 10%;
 
 }
 
