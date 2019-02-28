@@ -28,19 +28,17 @@ export default {
       }
     },
     changeIndex: function(clickIndex){
-      if(clickIndex != this.activeIndex){
-        this.activeIndex = clickIndex
-        switch(clickIndex){
-          case 1:
-            this.$router.push("/");
-            break;
-          case 2:
-            this.$router.push("/signup");
-            break;
-          case 3:
-            this.$router.push("/login");
-            break;
-        }
+      this.activeIndex = clickIndex;
+      switch(clickIndex){
+        case 1:
+          this.$router.push("/");
+          break;
+        case 2:
+          this.$router.push("/signup");
+          break;
+        case 3:
+          this.$router.push("/login");
+          break;
       }
     }
   }
